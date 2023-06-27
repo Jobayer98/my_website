@@ -10,6 +10,7 @@ import {
 } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
 import Banner from "./components/Banner/Banner";
+import About from "./components/About/About";
 
 const { Content, Footer, Sider } = Layout;
 
@@ -53,7 +54,12 @@ const App = () => {
         />
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
-        <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
+        <Content
+          style={{
+            margin: "24px 16px 0",
+            overflow: "initial",
+          }}
+        >
           <div
             style={{
               textAlign: "center",
@@ -61,6 +67,7 @@ const App = () => {
             }}
           >
             <Banner />
+            <About />
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>

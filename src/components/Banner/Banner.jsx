@@ -7,8 +7,8 @@ const Banner = () => {
   return (
     <div className="flex items-center gap-8 mx-2">
       <div className="flex  flex-col text-left w-1/2">
-        <h2 className="text-2xl font-bold mb-2">Hello, I am</h2>
-        <h1 className="text-7xl font-bold mb-5">Sergio Gadot</h1>
+        <h2 className="text-2xl font-bold mb-2">Hi, I am</h2>
+        <h1 className="text-6xl font-bold mb-5"> Jobayer Rahman</h1>
         <Title level={4} style={{ fontWeight: "bold", marginBottom: "20px" }}>
           I am Passionate{" "}
           <Typewriter
