@@ -6,7 +6,7 @@ const Skill = ({ title, prog }) => {
 
       <div className="mb-6 h-[6px] w-full bg-neutral-200 dark:bg-neutral-200 rounded">
         <div
-          className="h-[6px] bg-green-500 progress relative rounded"
+          className="h-[6px] bg-[#cf1f1f] progress relative rounded"
           style={{ width: prog }}
         >
           <p className="label absolute left-[94%] bottom-2">{prog}</p>

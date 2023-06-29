@@ -2,8 +2,8 @@ import Skill from "./Skills/Skill";
 
 const Skills = () => {
   return (
-    <>
-      <h1 className="text-3xl font-semibold mt-16 mb-8">My Skills</h1>
+    <div id="skills">
+      <h1 className="text-3xl font-extrabold mt-20 mb-8">My Skills</h1>
       <div className="flex justify-center gap-20">
         <div className="w-1/2">
           <Skill title={"JavaScript"} prog={"80%"} />
@@ -18,7 +18,7 @@ const Skills = () => {
           <Skill title={"Mongodb.js"} prog={"80%"} />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

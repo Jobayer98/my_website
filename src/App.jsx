@@ -1,39 +1,12 @@
-import React from "react";
-import {
-  HomeOutlined,
-  ContactsOutlined,
-  ShopOutlined,
-  TeamOutlined,
-  UploadOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-} from "@ant-design/icons";
-import { Layout, Menu, theme } from "antd";
+import { Layout } from "antd";
 import Banner from "./components/Banner/Banner";
 import About from "./components/About/About";
 import Skills from "./components/Skill/Skills";
+import Resume from "./components/Resume/Resume";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 const { Content, Footer, Sider } = Layout;
-
-const items = [
-  UserOutlined,
-  VideoCameraOutlined,
-  UploadOutlined,
-  HomeOutlined,
-  ContactsOutlined,
-  TeamOutlined,
-  ShopOutlined,
-].map((icon, index) => ({
-  key: String(index + 1),
-  icon: React.createElement(icon),
-  label: `nav ${index + 1}`,
-}));
-
 const App = () => {
-  const {
-    token: { colorBgContainer },
-  } = theme.useToken();
-
   return (
     <Layout hasSider>
       <Sider
@@ -47,32 +20,30 @@ const App = () => {
         }}
       >
         <div className="demo-logo-vertical" />
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={["4"]}
-          items={items}
-        />
+        <Sidebar />
       </Sider>
       <Layout className="site-layout" style={{ marginLeft: 200 }}>
         <Content
           style={{
-            margin: "24px 16px 0",
             overflow: "initial",
           }}
         >
           <div
             style={{
+              padding: "62px 24px",
               textAlign: "center",
-              background: colorBgContainer,
+              background: "#020312",
             }}
           >
             <Banner />
             <About />
             <Skills />
+            <Resume />
           </div>
         </Content>
-        <Footer style={{ textAlign: "center" }}>
+        <Footer
+          style={{ textAlign: "center", background: "#020312", color: "#fff" }}
+        >
           Ant Design ©2023 Created by Ant UED
         </Footer>
       </Layout>
