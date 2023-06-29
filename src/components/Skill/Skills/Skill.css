@@ -1,0 +1,30 @@
+.label {
+  /* background: #000;
+  color: #fff; */
+  width: 40px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  /* clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    36% 76%,
+    18% 100%,
+    21% 75%,
+    0% 75%
+  ); */
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.progress {
+  animation: progress 1s ease-in-out forwards;
+}

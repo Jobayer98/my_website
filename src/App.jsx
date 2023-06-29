@@ -11,6 +11,7 @@ import {
 import { Layout, Menu, theme } from "antd";
 import Banner from "./components/Banner/Banner";
 import About from "./components/About/About";
+import Skills from "./components/Skill/Skills";
 
 const { Content, Footer, Sider } = Layout;
 
@@ -68,6 +69,7 @@ const App = () => {
           >
             <Banner />
             <About />
+            <Skills />
           </div>
         </Content>
         <Footer style={{ textAlign: "center" }}>
