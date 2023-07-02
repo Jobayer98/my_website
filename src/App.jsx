@@ -4,6 +4,7 @@ import About from "./components/About/About";
 import Skills from "./components/Skill/Skills";
 import Resume from "./components/Resume/Resume";
 import Sidebar from "./components/Sidebar/Sidebar";
+import Contact from "./components/Contact/Contact";
 
 const { Content, Footer, Sider } = Layout;
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
             <About />
             <Skills />
             <Resume />
+            <Contact />
           </div>
         </Content>
         <Footer

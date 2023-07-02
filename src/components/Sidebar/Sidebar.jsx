@@ -1,12 +1,16 @@
 import "./Sidebar.css";
+import { BiLogoLinkedin, BiLogoTwitter } from "react-icons/bi";
+import { FaFacebookF } from "react-icons/fa";
+import img from "../../assets/img_pro.jpg";
 const Sidebar = () => {
   return (
     <aside className="bg-[#000011] h-full flex flex-col justify-between  overflow-hidden pl-8">
       <div>
         <img
           className=" h-28 w-28 rounded-full ring-4 ring-slate-100 mt-16"
-          src="https://sergio-react.vercel.app/static/img/about-me.jpg"
-          alt="me"
+          src={img}
+          alt="jobayer"
+          draggable="false"
         />
       </div>
       <ul className="uppercase font-semibold text-xs flex flex-col gap-3 -mt-10 list">
@@ -30,10 +34,16 @@ const Sidebar = () => {
         </li>
       </ul>
 
-      <div>
-        <a href="">facebook</a>
-        <a href="">Linkedin</a>
-        <a href="">Twitter</a>
+      <div className="flex items-center justify-center gap-4 -ml-4 mb-2">
+        <a href="https://www.linkedin.com/in/jobayer-rahman-5b0860184/">
+          <BiLogoLinkedin className="text-2xl" />
+        </a>
+        <a href="https://www.facebook.com/rashed.khan.jubayer">
+          <FaFacebookF className="text-xl" />
+        </a>
+        <a href="#">
+          <BiLogoTwitter className="text-2xl" />
+        </a>
       </div>
     </aside>
   );

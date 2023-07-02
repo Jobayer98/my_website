@@ -14,3 +14,14 @@
 html {
   scroll-behavior: smooth;
 }
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: #000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ee2525;
+  border-radius: 16px;
+  /* color:#; */
+}

@@ -2,6 +2,7 @@ import { Typography } from "antd";
 const { Title, Paragraph } = Typography;
 import { Typewriter } from "react-simple-typewriter";
 import "./Banner.css";
+import img from "../../assets/banner.png";
 
 const Banner = () => {
   return (
@@ -15,29 +16,25 @@ const Banner = () => {
           level={4}
           style={{ fontWeight: "bold", marginBottom: "20px", color: "#cf1f1f" }}
         >
-          I am{" "}
+          A{" "}
           <Typewriter
-            words={["Programmer", "Developer"]}
+            words={["Programmer", "Fullstack Developer"]}
             cursor
             cursorStyle="|"
             loop={false}
-            typeSpeed={70}
-            deleteSpeed={70}
+            typeSpeed={120}
+            deleteSpeed={100}
             delaySpeed={1000}
           />
         </Title>
         <Paragraph className="text-lg text-gray-400">
-          I design and develop services for customers of all sizes, specializing
-          in creating stylish, modern websites, web services and online stores.
+          Hello there! I am a programmer,fullstack developer. I am very
+          passionate and dedicated to my work. I love learn new thing.
         </Paragraph>
         <button className="border w-40 py-2 btn_resume">Download Resume</button>
       </div>
       <div className="w-1/2">
-        <img
-          className="h-[500px]"
-          src="https://sergio-react.vercel.app/static/img/home-banner.png"
-          alt=""
-        />
+        <img className="h-[500px]" src={img} alt="jobayer" draggable="false" />
       </div>
     </div>
   );
