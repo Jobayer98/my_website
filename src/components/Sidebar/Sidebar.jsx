@@ -4,7 +4,7 @@ import { FaFacebookF } from "react-icons/fa";
 import img from "../../assets/img_pro.jpg";
 const Sidebar = () => {
   return (
-    <aside className="bg-[#000011] h-full flex flex-col justify-between  overflow-hidden pl-8">
+    <aside className="w-[20%] bg-[#000011] h-full flex flex-col justify-between items-center overflow-hidden fixed">
       <div>
         <img
           className=" h-28 w-28 rounded-full ring-4 ring-slate-100 mt-16"

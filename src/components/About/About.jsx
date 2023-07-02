@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <div id="about" className="my-36">
-      <h1 className="text-3xl font-extrabold">About Me</h1>
+    <div id="about" className="my-36 item3">
+      <h1 className="text-3xl font-extrabold mb-8">About Me</h1>
       <div className="flex flex-col items-center justify-center">
-        <p className="w-[60%] text-lg mb-4 text-gray-300">
+        <p className="lg:w-[60%] text-lg mb-4 text-gray-400">
           Hello there! I am a programmer, fullstack developer. I am very
           passionate and dedicated to my work. I love learn new thing.
         </p>

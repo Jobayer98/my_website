@@ -3,9 +3,9 @@ const Contact = () => {
     <div id="contact" className="lg:px-40">
       <h1 className="text-3xl font-bold mt-24 mb-8">Get In Touch</h1>
       <form className="flex flex-col gap-4 text-left">
-        <div className="flex gap-4">
-          <div className="w-1/2">
-            <label className="block" htmlFor="Name">
+        <div className="lg:flex gap-4">
+          <div className="lg:w-1/2">
+            <label className="block mb-2" htmlFor="Name">
               Name
             </label>
             <input
@@ -15,8 +15,8 @@ const Contact = () => {
               required
             />
           </div>
-          <div className="w-1/2">
-            <label className="block" htmlFor="Email">
+          <div className="lg:w-1/2">
+            <label className="block mb-2" htmlFor="Email">
               Email
             </label>
             <input
@@ -28,16 +28,20 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <label htmlFor="subject">Subject</label>
+          <label className="block mb-2" htmlFor="subject">
+            Subject
+          </label>
           <input
-            className="bg-[#ffffff1a] border-none  pl-2 py-2 w-full outline-none hover:bg-[#2d2e3a]"
+            className="bg-[#ffffff1a] border-none   pl-2 py-2 w-full outline-none hover:bg-[#2d2e3a]"
             type="text"
             placeholder="Subject"
             required
           />
         </div>
         <div>
-          <label htmlFor="message">Message</label>
+          <label className="block mb-2" htmlFor="message">
+            Message
+          </label>
           <textarea
             className="bg-[#ffffff1a] border-none  pl-2 py-2 w-full outline-none resize-none hover:bg-[#2d2e3a]"
             name="message"
